@@ -16,14 +16,14 @@ Fuente: [Social_Network_Ads.csv]
 
 Se entrenaron y compararon 5 algoritmos de clasificación utilizando validación cruzada estratificada con 5 folds. Las métricas evaluadas fueron:
 
-- **AUC (Area Under the Curve)**: Mide la capacidad del modelo para distinguir entre clases. Cuanto más cerca de 1, mejor.
-- **Accuracy (CA)**: Porcentaje de predicciones correctas sobre el total.
-- **F1 Score**: Promedio armónico entre precisión y recall, útil cuando hay clases desbalanceadas.
-- **Precisión (Precision)**: De las veces que el modelo predijo una clase positiva, cuántas fueron correctas.
-- **Recall (Sensibilidad)**: De todos los casos positivos reales, cuántos detectó el modelo.
-- **MCC (Matthews Correlation Coefficient)**: Mide la calidad global de la clasificación incluso si las clases están desbalanceadas. Va de -1 a 1.
+- **AUC (Área bajo la curva ROC)**: Mide la capacidad del modelo para distinguir entre clases. Cuanto más cercano a 1, mejor.
+- **Accuracy (Precisión global)**: Porcentaje total de aciertos del modelo.
+- **F1 Score**: Media armónica entre precisión y recall. Útil cuando hay clases desbalanceadas.
+- **Precisión (Precision)**: De todos los positivos predichos, cuántos fueron realmente positivos.
+- **Recall (Sensibilidad)**: De todos los positivos reales, cuántos fueron detectados por el modelo.
+- **MCC (Coeficiente de correlación de Matthews)**: Mide la calidad de la clasificación, incluso con clases desbalanceadas. Su valor varía entre -1 (mala predicción) y 1 (predicción perfecta).
 
-### 📊 Resultados
+### 🔬 Resultados
 
 | Modelo                | AUC   | Accuracy | F1    | Precisión | Recall | MCC   |
 |-----------------------|-------|----------|-------|-----------|--------|--------|
